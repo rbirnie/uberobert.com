@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Uberobert: I'm on the Interwebs!</title>
+
+    <script type="text/javascript" src="http://use.typekit.com/jjw2jrj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <link type="text/css" rel="stylesheet" href="/stylesheets/reset.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/screen.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/code.css">
+    
+    <link rel="apple-touch-icon" href="/images/iOS-114.png" />
+    <link rel="apple-touch-icon-precomposed" href="/images/iOS-57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" media="screen and (resolution: 132dpi)" href="/images/iOS-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" media="screen and (resolution: 326dpi)" href="/images/iOS-114.png" />
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+
+
+  </head>
+  <body class="{{ page.layout }}">
+
+    <section id="main">
+
+      <section id="masthead" class="group">
+        <header class="group">
+          <p><a href="/">Uber<br>Robert</a></p>
+          <h1>Ohh the places you'll go</h1>
+          <img src="/images/uo-logo.png">
+        </header>
+      </section>
+
+      <section id="focus" class="group">
+
+        <section id="content" class="group">
+          {{ content }}
+        </section>
+
+        <section id="sidebar">
+
+          <section id="meta-col1" class="meta group">
+            <aside id="about">
+              <header>
+                <h3>About</h3>
+              </header>
+              <p>
+                Uberobert is a personal blog/site for me! Robert Birnie. 
+              </p>
+            </aside>
+
+            <aside>
+              <header>
+                <h3>Stay up to date</h3>
+              </header>
+              <nav>
+                <ul>
+                  <li class="icon rss"><a href="#">RSS</a></li>
+                  <li class="icon twitter"><a href="http://twitter.com/Robert_Birnie">Twitter</a></li>
+                  <li class="icon"><a href="/subscribe">More</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </section>
+
+          <section id="meta-col2" class="meta group">
+
+            <aside id="bio">
+              <header>
+                <h3>The Author</h3>
+              </header>
+              <p>
+                I'm an IT professional, Systems Engineer and budding entrepreneur.
+                <a href="/bio">See more.</a>
+              </p>
+            </aside>
+
+            <aside>
+              <nav id="extra">
+                <ul>
+                  <li><a href="/colophon">Colophon</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </section>
+
+        </section>
+
+      </section>
+
+      <section id="footer" class="group">
+        <footer class="group">
+          <nav id="site">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/bio">Bio</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/subscribe">Subscribe</a></li>
+              <li><a href="/colophon">Colophon</a></li>
+            </ul>
+          </nav>
+          <p class="copyright">
+            &copy;2013 &ndash; Robert Birnie
+          </p>
+        </footer>
+      </section>
+
+    </section>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30311428-1']);
+      _gaq.push(['_setDomainName', 'counselorfor.me']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

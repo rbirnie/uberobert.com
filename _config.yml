@@ -1,0 +1,24 @@
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+
+sitename:  UbeRobert
+tagline: Just another ant serving strange, incomprehensible shapes.
+
+production_url : http://uberobert.com
+url: http://uberobert.com
+permalink: pretty
+paginate: 10
+
+safe:        false
+auto:        true
+
+future:      true
+pygments:    true
+markdown:    rdiscount
+
+navigation:
+- text: Bio
+  url: /bio.html
+- text: Contact
+  url: /contact.html
+- text: Subscribe
+  url: /subscribe.html
