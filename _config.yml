@@ -1,4 +1,4 @@
-exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems, README.md]
 
 sitename:  UbeRobert
 tagline: Just another ant serving strange, incomprehensible shapes.
