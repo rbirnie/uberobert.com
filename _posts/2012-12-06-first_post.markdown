@@ -1,11 +1,9 @@
 ---
 date: December 6, 2012
-title: First Post
+title: Hello World! 
 category: testing
 layout: post
 ---
-
-## Hello World! 
 
 I'm excited to get this blog thingie started. I'll be collecting a few of the tidbits that I've learned over time here. And migrating my little bit of content on [Tumblr](http://rbirnie.tumblr.com/) over here.
 
