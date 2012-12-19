@@ -1,7 +1,7 @@
 ---
 date: December 6, 2012
 title: Hello World! 
-category: testing
+category: General
 layout: post
 ---
 

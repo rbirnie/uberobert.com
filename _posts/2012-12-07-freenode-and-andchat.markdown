@@ -1,5 +1,5 @@
 ---
-date: December 11, 2012
+date: December 7, 2012
 title: Getting FreeNode and AndChat to play nice
 category: General
 layout: post
