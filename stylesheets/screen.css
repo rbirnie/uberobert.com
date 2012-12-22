@@ -217,6 +217,10 @@ section.meta:hover li.rss {
   background-image: url('/images/rss.png');
 }
 
+section.meta:hover li.github {
+  background-image: url('/images/github.png');
+}
+
 section.meta:hover a {
   color: #71569E;
 }
