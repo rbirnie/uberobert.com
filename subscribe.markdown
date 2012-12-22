@@ -14,4 +14,4 @@ And if you dream of days gone by (and don't mind being weeks behind) SnailMail i
 [subscribe]: http://feeds.feedburner.com/uberobert
 [reader]:    http://reader.google.com
 [twitter]:   http://twitter.com/Robert_Birnie
-[email]:     rbirnie@gmail.com
+[email]:     http://feedburner.google.com/fb/a/mailverify?uri=Uberobert&amp;loc=en_US
