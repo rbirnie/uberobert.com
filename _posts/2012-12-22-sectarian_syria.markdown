@@ -1,5 +1,5 @@
 ---
-date: December 23, 2012
+date: December 22, 2012
 title: Sectarian Syria 
 category: Politics
 layout: post

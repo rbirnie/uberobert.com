@@ -9,9 +9,9 @@ permalink: pretty
 paginate: 10
 
 safe:        false
-auto:        true
+auto:        false
 
-future:      true
+future:      false
 pygments:    true
 markdown:    rdiscount
 
