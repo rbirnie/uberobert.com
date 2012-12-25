@@ -6,7 +6,7 @@ tagline: Just another ant serving strange, incomprehensible shapes.
 production_url : http://uberobert.com
 url: http://uberobert.com
 permalink: pretty
-paginate: 10
+paginate: 5
 
 safe:        false
 auto:        false

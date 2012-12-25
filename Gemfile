@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem "jekyll"
+gem 'jekyll', :github => 'mojombo/jekyll'
 gem "rdiscount"
 gem "posix-spawn"

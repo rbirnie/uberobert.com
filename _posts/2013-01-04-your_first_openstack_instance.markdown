@@ -5,11 +5,11 @@ category: OpenStack
 layout: post
 ---
 
-I've been working with OpenStack at work and there has been a little confusion with users on how to spin up instances. Some of the concepts are a little new, even if they are relativly simple after you see it once. And the OpenStack documentation is so huge that it takes months to process, which is not great for Joe User. This will guide you through getting a plain instance up on OpenStack and is geared to an average user who just wants this damn system started already.
+I've been working with [OpenStack](http://www.openstack.org/) at work and there has been a little confusion with users on how to spin up instances. Some of the concepts are a little new, even if they are relativly simple after you see it once. And the OpenStack documentation is so huge that it takes months to process, which is not great for Joe User. This will guide you through getting a plain instance up on OpenStack and is geared to an average user who just wants this damn system started already.
 
 ## Create an Access Keypair
 
-Keypairs are OpenStack's way to give you ssh access to new instances without passwords. After sshing in you can set a password on your new instance. You can also use keypairs in the instances so that multiple instances can communicate with each other without password access. You can use the same keypair for multiple instances, so this only needs to be done once.
+[Keypairs](http://docs.openstack.org/essex/openstack-compute/starter/content/Creation_of_Key_Pairs-d1e1848.html) are OpenStack's way to give you ssh access to new instances without passwords. After sshing in you can set a password on your new instance. You can also use keypairs in the instances so that multiple instances can communicate with each other without password access. You can use the same keypair for multiple instances, so this only needs to be done once.
 
 * Login to Openstack
 * Go to "Access & Security" tab
@@ -47,7 +47,7 @@ This is your host's external address that you can access. Now to open up access 
 
 ## Security Group Setup
 
-Security groups control outside access to OpenStack hosts. Think of it as a shared firewall. Under **Access & Security** find your security group and hit **Edit Rules**. This is where you can open different ports to the host group. By default it is empty, you probably want at least TCP port 22.
+[Security groups](http://docs.openstack.org/essex/openstack-compute/starter/content/Security_Overview-d1e2505.html) control outside access to OpenStack hosts. Think of it as a shared firewall. Under **Access & Security** find your security group and hit **Edit Rules**. This is where you can open different ports to the host group. By default it is empty, you probably want at least TCP port 22.
 
 ## Accessing Instances
 
