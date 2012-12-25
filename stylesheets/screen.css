@@ -64,6 +64,18 @@ del {
   display: none;
 }
 
+strong {
+  font-weight: bold;
+  }
+
+em em {
+  font-style: bold;
+  }
+
+strong strong {
+  font-weight: bold;
+  }
+
 q:before {
   content: "\201C";
 }
