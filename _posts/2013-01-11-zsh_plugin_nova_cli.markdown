@@ -41,8 +41,8 @@ Optional arguments:
 
 This thing is a nightmare for autocomplete as the zsh plugin doesn't give you good hints for the <name>, <id>, etc. I've got the optional switches, but that's not extremely helpful if you don't know the rest. I'm looking around still to see if there is another syntax for zsh autocomplete to make this a little easier. I'll keep you posted on the progress, but I think this is a great start. 
 
-Once again:
-My [github](https://github.com/rbirnie)
-The [nova plugin](https://github.com/rbirnie/oh-my-zsh-nova)
-The [nova installer](https://github.com/openstack/python-novaclient)
+Once again:<br>
+My [github](https://github.com/rbirnie)<br>
+The [nova plugin](https://github.com/rbirnie/oh-my-zsh-nova)<br>
+The [nova installer](https://github.com/openstack/python-novaclient)<br>
 And [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
