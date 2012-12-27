@@ -1,5 +1,5 @@
 ---
-date: 2013-01-11
+date: 2013-01-08
 title: OpenStack CLI
 category: OpenStack
 layout: post
