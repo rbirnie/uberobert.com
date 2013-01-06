@@ -9,6 +9,10 @@ margin-top: -1px;
 .btn [class^="icon-"] {
     margin-top:2px;
 }
+
+a {
+    color: #005580;
+}
     
 
 blockquote {
@@ -98,7 +102,7 @@ body.home .post {
 }
 
 .sidebar h2 {
-    background-color: #08C;
+    background-color: #005580;
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     border-radius: 6px;
@@ -145,7 +149,7 @@ body.home .post {
     position: absolute;
     left: -40px;
     font-size: 80px;
-    color:#08C;
+    color:#005580;
 }
 
 .post h2 a {
