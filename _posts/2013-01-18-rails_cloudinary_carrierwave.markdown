@@ -1,8 +1,9 @@
 ---
-date: 2013-01-18
 title: Using Cloudinary and CarrierWave for Rails Image Uploading
-category: rails
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 I just finished adding [Cloudinary](http://cloudinary.com/) as my host for images uploaded on a test site of mine. It ties in cleanly with [CarrierWave](https://github.com/jnicklas/carrierwave) and removes the need for [RMagick](http://rmagick.rubyforge.org/) to be installed on the VPS. This was a great solution as the [RMagick gem](https://github.com/rmagick/rmagick) is no longer being maintained on github and the Cloudinary [free](http://cloudinary.com/plans) plan is quite reasonable for my usage.

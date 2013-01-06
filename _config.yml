@@ -1,12 +1,7 @@
-exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems, README.md]
-
-sitename:  UbeRobert
-tagline: Just another ant serving strange, incomprehensible shapes.
-
-production_url : http://uberobert.com
-url: http://uberobert.com
-permalink: pretty
-paginate: 5
+# Jekyll
+exclude: nbproject, README.md, manifest.yml, rakefile.rb
+permalink:   /:title
+url:         http://www.uberobert.com
 
 safe:        false
 auto:        false
@@ -15,10 +10,10 @@ future:      false
 pygments:    true
 markdown:    rdiscount
 
-navigation:
-- text: Bio
-  url: /bio.html
-- text: Contact
-  url: /contact.html
-- text: Subscribe
-  url: /subscribe.html
+# Site
+uberobert:
+    title: Uberobert
+
+# Only First P Plugin
+only_first_p:
+    show_read_more_link: false

@@ -1,8 +1,9 @@
 ---
-date: 2013-01-15
 title: Weekly Updates
-category: Blog
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 Hey folks,

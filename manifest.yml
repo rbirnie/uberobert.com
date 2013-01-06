@@ -1,0 +1,8 @@
+vendor:
+  twitter-bootstrap: http://twitter.github.com/bootstrap/assets/bootstrap.zip
+  font-awesome: https://github.com/FortAwesome/Font-Awesome/zipball/master
+  google-code-prettify: http://google-code-prettify.googlecode.com/files/prettify-small-1-Jun-2011.tar.bz2
+
+_plugins:
+  sitemap-generator: https://github.com/kinnetica/jekyll-plugins.git
+  only-first-p: https://github.com/sebcioz/jekyll-only_first_p.git

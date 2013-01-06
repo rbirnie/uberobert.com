@@ -1,8 +1,9 @@
 ---
-date: December 22, 2012
 title: Sectarian Syria 
-category: Politics
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 There were quite a few articles around the web yesterday about a UN Report that the [Syria conflict turns 'overtly sectarian'](http://www.latimes.com/news/world/worldnow/la-fg-wn-syria-united-nations-20121220,0,4358753.story). I know this is a little different topic from what I normally would write about, but the report is just so dumb that I must comment. 

@@ -1,8 +1,9 @@
 ---
-date: December 28, 2012
 title: Jekyll, Jenkins, and Github OAuth
-category: General
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 Just finished my Jenkins setup for this Jenkins blog. [Jenkins](http://jenkins-ci.org/) is a pretty sweet [Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration) server. Here's how it all went down: 

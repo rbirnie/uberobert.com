@@ -1,0 +1,77 @@
+{% assign content_item = false %}
+{% if post %}
+{% assign content_item = post %}
+{% else %}
+{% assign content_item = page %}
+{% endif %}
+
+<div class="post">
+    <div class="section section-post-meta post">    
+        <h2>            
+            <a href="{{ content_item.url }}">
+                {% if content_item.icon %} 
+                <i class="indicator-icon {{ content_item.icon }}"></i>
+                {% else %}
+                <i class="indicator-icon icon-bullhorn"></i>
+                {% endif %}                
+                
+                {{ content_item.title }}
+            </a>
+        </h2>
+        <p class="meta">
+            {{ content_item.date | date: "%B %e, %Y" }}
+            {% if content_item.author %}
+                by 
+                {% if content_item.author.url %}
+                <a href="{{ content_item.author.url }}">{{ content_item.author.name }}</a>
+                {% else %}
+                {{ content_item.author.name }}
+                {% endif %}             
+            {% endif %}       
+        </p>
+    </div>
+    {% if content_item.illustration %}
+        {% if content_item.illustration.id %}
+            <div class="section">
+                <div class="illustration illustration-{{ content_item.illustration.id }}">
+                    <a href="/illustrations/{{ content_item.illustration.id }}" style="background-image: url('{{ content_item.illustration.url }}');">
+                        <i class="icon-zoom-in"></i>
+                    </a>
+                </div>
+            </div>        
+        {% else %}
+            <div class="section">
+                <div class="illustration illustration-{{ content_item.illustration.id }}" style="{% if content_item.illustration.height %} height: {{content_item.illustration.height}} {% endif %}">
+                    <span style="background-image: url('{{ content_item.illustration.url }}');"></span>
+                </div>
+            </div>        
+        {% endif %}
+    {% endif %}
+
+    {% assign pageuri = "/index.html" | split: "|" %}
+    {% unless skipuri contains page.url %}
+        {{ content }}
+    {% else %}
+        {{ content_item.content }}
+    {% endunless %}
+
+    {% assign skipuri = "/index.html|/bio.html" | split: "|" %}
+    {% unless skipuri contains page.url %}
+    <div class="section comments">
+        <i class="comment-icon icon-comment-alt"></i>
+        <div id="disqus_thread">
+        </div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'uberobert'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>        
+    </div>        
+    {% endunless %}
+</div>

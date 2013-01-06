@@ -1,8 +1,9 @@
 ---
-date: December 18, 2012
 title: Language Complexity
-category: General
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 I find different languages quite interesting in programming. It is mind boggling that there are so many and so many personal preferences to go along with them. Compounded with the fact that they are almost all constantly changing and evolving. I just finished an interesting glance at an article on [a visual comparison of language complexity](http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/)

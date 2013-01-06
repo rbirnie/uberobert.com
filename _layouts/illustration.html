@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ page.title }}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% include assets/css/default.html %}
+        {% include assets/js/default.html %}
+    </head>
+    <body id="{% include page/id %}" class="illustration">
+        {% include header/navigation.html %}
+
+        <div class="container">
+            {% include header/introduction.html %}
+            
+            <div class="row">
+                <div class="span12">
+                    <a class="image" href="{{ page.illustration.url }}">
+                        <img src="{{ page.illustration.url }}" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,8 +1,9 @@
 ---
-date: 2013-01-25
 title: Foreman Trends
-category: Foreman
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 I'm super excited about the 1.1 release of [Foreman](http://theforeman.org/), as it has a chunk of my code in there! My work needed a way to track historical trends in our infrastructure over time and gave me the task of coming up with a solution. The Trend pages in Foreman give a graph of the number of hosts with a puppet fact value over time, and the list of current hosts.

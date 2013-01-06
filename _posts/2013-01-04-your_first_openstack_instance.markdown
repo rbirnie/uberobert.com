@@ -1,8 +1,9 @@
 ---
-date: 2013-01-04
 title: Your First OpenStack Instance
-category: OpenStack
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 I've been working with [OpenStack](http://www.openstack.org/) at work and there has been a little confusion with users on how to spin up instances. Some of the concepts are a little new, even if they are relativly simple after you see it once. And the OpenStack documentation is so huge that it takes months to process, which is not great for Joe User. This will guide you through getting a plain instance up on OpenStack and is geared to an average user who just wants this damn system started already.

@@ -1,8 +1,9 @@
 ---
-date: 2013-01-11
 title: Zsh plugin for Nova CLI
-category: OpenStack
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 After going through making the tutorial for [OpenStack CLI](https://github.com/openstack/python-novaclient), I got a little irritated at how long the commands are; primarily the boot command with its dozen arguments. So I made a plugin for [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to autocomplete the madness. The plugin is located in my github repo [oh-my-zsh-nova](https://github.com/rbirnie/oh-my-zsh-nova). To install just copy the nova directory into the oh-my-zsh plugins directory.
@@ -39,7 +40,7 @@ Optional arguments:
                         Make flavor accessible to the public (default true)
 {% endhighlight %}
 
-This thing is a nightmare for autocomplete as the zsh plugin doesn't give you good hints for the <name>, <id>, etc. I've got the optional switches, but that's not extremely helpful if you don't know the rest. I'm looking around still to see if there is another syntax for zsh autocomplete to make this a little easier. I'll keep you posted on the progress, but I think this is a great start. 
+This thing is a nightmare for autocomplete as the zsh plugin doesn't give you good hints for the *name*, *id*, etc. I've got the optional switches, but that's not extremely helpful if you don't know the rest. I'm looking around still to see if there is another syntax for zsh autocomplete to make this a little easier. I'll keep you posted on the progress, but I think this is a great start. 
 
 Once again:<br>
 My [github](https://github.com/rbirnie)<br>

@@ -1,0 +1,11 @@
+<ul class="listless">
+{% for post in site.posts offset: 0 limit: 5 %}
+    <li>
+        {% if page.url == post.url %}
+        {{ post.title }}
+        {% else %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>

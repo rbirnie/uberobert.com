@@ -1,8 +1,9 @@
 ---
-date: December 11, 2012
 title: Upgraded Fact Imports
-category: Ruby
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 [Foreman](http://theforeman.org) has a [script](https://github.com/theforeman/puppet-foreman/blob/283619064fbde0275235535b19c53da249357035/files/push_facts.rb) to update it's facts by going through the fact's in /var/lib/puppet/yaml/facts/*.yaml and posting them to the Foreman server. The only issue is that the script does this one fact at a time and waits for the server response before proceeding which was taking long enough that the hosts had all reported back in again before the script could loop through all the hosts once.

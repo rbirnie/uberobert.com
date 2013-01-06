@@ -1,8 +1,9 @@
 ---
-date: 2013-01-08
 title: OpenStack CLI
-category: OpenStack
-layout: post
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
 ---
 
 Starting and managing machines from the CLI is at times useful. It is nice managing your instances from your local machine without the need of a web browser. Here's the basics on how to start a host.
