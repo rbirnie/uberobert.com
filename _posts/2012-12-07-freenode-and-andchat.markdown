@@ -5,7 +5,7 @@ category: General
 layout: post
 ---
 
-I recently had a battle to get Andchat and Freenode IRC to play nicely. Freenode changed their policy sometime ago where people on mobile or coming from Tor need to connect with SASL (Simple Authentication and Security Layer). Its not too hard to setup but finding the resources on how to do it was a little troubling. Main issue is that AndChat doesn't just have a "turn on SASL" setting and no hints in its UI. So... here's the scoop:
+I recently had a battle to get [Andchat](http://www.andchat.net/) and [freenode IRC](http://freenode.net/) to play nicely. Freenode changed their policy sometime ago where people on mobile or coming from Tor need to connect with [SASL](http://freenode.net/sasl/) (Simple Authentication and Security Layer). Its not too hard to setup but finding the resources on how to do it was a little troubling. Main issue is that AndChat doesn't just have a "turn on SASL" setting and no hints in its UI. So... here's the scoop:
 
 
 * First you need to register a nick with Freenode. This must be done on a desktop IRC client which can connect. 
