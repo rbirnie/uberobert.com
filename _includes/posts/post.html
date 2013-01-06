@@ -55,7 +55,7 @@
         {{ content_item.content }}
     {% endunless %}
 
-    {% assign skipuri = "/index.html|/bio.html" | split: "|" %}
+    {% assign skipuri = "/index.html|/about.html" | split: "|" %}
     {% unless skipuri contains page.url %}
     <div class="section comments">
         <i class="comment-icon icon-comment-alt"></i>

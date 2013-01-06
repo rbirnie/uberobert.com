@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Bio
-author:
-  name: Robert Birnie
-  url: http://uberobert.com
 ---
 
 <p>I'm an IT professional, Systems Engineer and budding entrepreneur. I work for <a href="http://us.etrade.com">E*Trade</a>, I love automating things and dream of the day when deploying code is so simple that we never have to login to a Linux box.</p>

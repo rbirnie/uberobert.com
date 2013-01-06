@@ -45,6 +45,10 @@ body {
     left:-50px;
 }
 
+.hero-unit {
+    padding:60px 60px 80px;
+}
+
 .hero-unit h1 {
     font-size: 50px;
     margin-bottom:20px;
@@ -59,13 +63,14 @@ body {
     text-decoration: none;
 }
 
-.hero-unit #twitter-status {
-    height:80px;
-}
-
 .hero-unit #tweet {
     opacity:0;
-    height:60px;
+    height:80px;
+    font-size: 14px;
+}
+
+.well {
+    padding: 10px;
 }
 
 .hero-unit #twitter-status .icon-twitter {
@@ -76,7 +81,7 @@ body {
     float: left;
     font-size: 58px;
     display: inline-block;
-    margin: 0 10px 0 0;    
+    margin: 0 10px 20px 0;    
 }
 
 .hero-unit #tweet .time {
@@ -139,16 +144,16 @@ body.home .post {
     width: auto;
     height: auto;
     position: absolute;
-    left: -40px;
-    font-size: 80px; 
+    left: -20px;
+    font-size: 50px; 
 }
 
 .comment-icon {
     width: auto;
     height: auto;
     position: absolute;
-    left: -40px;
-    font-size: 80px;
+    left: -20px;
+    font-size: 50px;
     color:#005580;
 }
 
@@ -182,7 +187,7 @@ body.home .post {
 .newer-older a {
     position:absolute;
     opacity:0.6;
-    width:42%;
+    width:43%;
 }
 
 .newer-older a:hover {    
