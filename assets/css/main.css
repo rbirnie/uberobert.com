@@ -47,6 +47,16 @@ body {
 
 .hero-unit {
     padding:60px 60px 80px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+}
+
+.hero-unit p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
+    color: inherit;
 }
 
 .hero-unit h1 {
@@ -65,7 +75,7 @@ body {
 
 .hero-unit #tweet {
     opacity:0;
-    height:80px;
+    height:60px;
     font-size: 14px;
 }
 
