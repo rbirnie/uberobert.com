@@ -1,5 +1,5 @@
 # Jekyll
-exclude: nbproject, README.md, manifest.yml, rakefile.rb
+exclude: nbproject, README.md, manifest.yml, rakefile.rb, Gemfile, Gemfile.lock, update.sh
 permalink:   /:title
 url:         http://www.uberobert.com
 
