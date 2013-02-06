@@ -1,4 +1,4 @@
 /_site
 /nbproject
 *.DS_Store
-
+/update.sh
