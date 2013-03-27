@@ -1,0 +1,13 @@
+---
+title: OneTab
+layout: default
+author:
+  name: Robert Birnie
+  url: http://uberobert.com
+---
+
+I just found this tool recently and have found it extremely useful. It is called [OneTab](http://www.one-tab.com/) and it’s so simple that it's brilliant. I personally am an avid browser, but not a great reader, of the web. So I often open up tabs of interesting articles for later consumption, usually once I'm home and have a beer in hand. This often leads to 50+ tabs open in Chrome. Luckily my MacBook has gobs of ram so this isn't a pressing issue, but it is hard to find the tab I'm looking for. Not to mention that if my Chrome crashes I get this sinking feeling in my gut.
+
+OneTab easily solves this by collapsing all your tabs into a single list for later consumption. From here you can open them individually or as a whole set. OneTab also lets you do some minor organization and dragging tabs around. One of the neater features is the ability to share a set of sites as a list for others.
+
+All together this makes a pretty great little service that I'm excited to use. So go give it a try!

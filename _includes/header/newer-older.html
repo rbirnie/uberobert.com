@@ -1,48 +1,21 @@
 {% assign skipuri = "/archive/index.html|/about.html" | split: "|" %}
-{% unless skipuri contains page.url %}
-    {% if page.url contains '/illustrations/' %}
-    <div class="row newer-older">        
-        {% for post in site.posts %}
-            {% if post.illustration %}
-                {% if post.illustration.id == page.illustration.id or page.source and post.title == page.source %}
-                <a href="{{ post.url }}" class="newer"><i class="icon-arrow-left"></i>Back to &ldquo;{{ post.title }}&rdquo;</a> 
-                {% endif %}             
-            {% endif %}
-        {% endfor %}
-    </div>
-    {% else %}
-    <div class="row newer-older">                
-        {% assign content_item = page %}
-        {% if page.url == '/index.html' %}
-            {% for post in site.posts offset: 0 limit: 1 %}
-                {% assign content_item = post %}
-            {% endfor %}
-        {% endif %}
-
-        {% assign newer = false %}
-        {% assign older = false %}
-        {% assign has_found_current = false %}
-        {% assign has_found_older = false %}
-        {% for post in site.posts %}                
-            {% if post.url == content_item.url %}
-                {% assign has_found_current = true %}
-            {% endif %}
-
-            {% if has_found_current == false %}
-                {% assign newer = post %}
-            {% endif %}
-
-            {% if has_found_current == true and has_found_older == false and post.url != content_item.url %}
-                {% assign older = post %}
-                {% assign has_found_older = true %}
-            {% endif %}                 
-
-        {% endfor %}
-
+{% unless skipuri contains page.url %}{% if page.url contains '/illustrations/' %}
+        <div class="row newer-older">        
+            {% for post in site.posts %}{% if post.illustration %}{% if post.illustration.id == page.illustration.id or page.source and post.title == page.source %}<a href="{{ post.url }}" class="newer"><i class="icon-arrow-left"></i>Back to &ldquo;{{ post.title }}&rdquo;</a>{% endif %}{% endif %}{% endfor %}
+        </div>{% else %}
+        <div class="row newer-older">
+{% assign content_item = page %}
+{% if page.url == '/index.html' %}
+{% for post in site.posts offset: 0 limit: 1 %}{% assign content_item = post %}{% endfor %}
+{% endif %}
+{% assign newer = false %}
+{% assign older = false %}
+{% assign has_found_current = false %}
+{% assign has_found_older = false %}
+{% for post in site.posts %}{% if post.url == content_item.url %}{% assign has_found_current = true %}{% endif %}{% if has_found_current == false %}{% assign newer = post %}{% endif %}{% if has_found_current == true and has_found_older == false and post.url != content_item.url %}{% assign older = post %}{% assign has_found_older = true %}{% endif %}{% endfor %}
         {% if newer != false %}
         <a href="{{ newer.url}}" class="newer"><i class="icon-arrow-left"></i> {{ newer.title }}</a>
-        {% endif %}                
-
+        {% endif %}
         {% if older != false %}
         <a href="{{ older.url}}" class="older"><i class="icon-arrow-right"></i> {{ older.title }}</a>
         {% endif %}
