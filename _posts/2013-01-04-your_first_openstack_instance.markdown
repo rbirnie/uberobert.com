@@ -33,11 +33,11 @@ Creating your first OpenStack instance.
 * Also under **Access & Security** make note of your *Security Group*, you'll need this later
 * Click **Launch**
 
-Now that the instance is launched we have to do a little housekeeping to make sure its ready to go. 
+Now that the instance is launched we have to do a little housekeeping to make sure its ready to go.
 
 ## Set Floating IP
 
-Instances by default only have an internal IP that is only accessible by OpenStack. You need to allocate a **floating address** to get access to your machine. 
+Instances by default only have an internal IP that is only accessible by OpenStack. You need to allocate a **floating address** to get access to your machine.
 
 * Under your new Instance's Actions select **Allocate Floating IP**
 * If there are no IPs in the dropdown hit the + symbol to add a new IP from the pool.

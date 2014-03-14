@@ -8,9 +8,9 @@ author:
 
 Starting and managing machines from the CLI is at times useful. It is nice managing your instances from your local machine without the need of a web browser. Here's the basics on how to start a host.
 
-## Install 
+## Install
 
-First you must install the [Python bindings to the OpenStack Nova API](https://github.com/openstack/python-novaclient). Once that is installed setup your ~/.novarc file. This will contain the settings to access your OpenStack cluster. 
+First you must install the [Python bindings to the OpenStack Nova API](https://github.com/openstack/python-novaclient). Once that is installed setup your ~/.novarc file. This will contain the settings to access your OpenStack cluster.
 
 Mine looks something like this:
 
@@ -95,4 +95,4 @@ nova list
 
 That looks better! Now we can ssh into the machine using our personal keypair we setup previously in [your first OpenStack Instance](http://uberobert.com/OpenStack/2013/01/04/your_first_openstack_instance/).
 
-If you want to learn more about the CLI, ['nova help'](http://docs.openstack.org/essex/openstack-compute/starter/content/Nova_Commands-d1e2589.html) and 'nova help command' are indispensible. 
+If you want to learn more about the CLI, ['nova help'](http://docs.openstack.org/essex/openstack-compute/starter/content/Nova_Commands-d1e2589.html) and 'nova help command' are indispensible.

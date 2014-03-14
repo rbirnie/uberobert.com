@@ -1,10 +1,9 @@
 # Jekyll
-exclude: nbproject, README.md, manifest.yml, rakefile.rb, Gemfile, Gemfile.lock, update.sh
+exclude: ['nbproject', 'README.md', 'manifest.yml', 'rakefile.rb', 'Gemfile', 'Gemfile.lock', 'update.sh', 'localupdate.sh','s3_website.yml']
 permalink:   /:title
 url:         http://www.uberobert.com
 
 safe:        false
-auto:        false
 
 future:      false
 pygments:    true

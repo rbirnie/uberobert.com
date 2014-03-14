@@ -1,6 +1,6 @@
 [class^="icon-"], [class*=" icon-"] {
     background-image: none;
-}  
+}
 
 .btn-small [class^="icon-"] {
 margin-top: -1px;
@@ -13,7 +13,7 @@ margin-top: -1px;
 a {
     color: #005580;
 }
-    
+
 
 blockquote {
     border-color: #ddd;
@@ -64,7 +64,7 @@ body {
     margin-bottom:20px;
 }
 
-.hero-unit h1 a {    
+.hero-unit h1 a {
     color:#555;
 }
 
@@ -91,7 +91,7 @@ body {
     float: left;
     font-size: 58px;
     display: inline-block;
-    margin: 0 10px 20px 0;    
+    margin: 0 10px 20px 0;
 }
 
 .hero-unit #tweet .time {
@@ -108,12 +108,16 @@ body {
 }
 
 body.home .post {
-    
+
+}
+
+code {
+    color: #333333;
 }
 
 .post .section {
     padding-left: 60px;
-    padding-right: 60px;    
+    padding-right: 60px;
 }
 
 .sidebar h2 {
@@ -122,18 +126,18 @@ body.home .post {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     padding: 0px 10px;
-    margin-bottom: 10px;  
-    
+    margin-bottom: 10px;
+
     font-size:16px;
 }
 
 .sidebar h2 i {
     width: auto;
-    height: auto;  
-    
+    height: auto;
+
     font-size:16px;
     line-height: 16px;
-    
+
     margin-right:4px;
 }
 
@@ -143,7 +147,7 @@ body.home .post {
 
 .newsletter #email {
     width: 70%;
-    margin: 0;    
+    margin: 0;
 }
 
 .post {
@@ -155,7 +159,7 @@ body.home .post {
     height: auto;
     position: absolute;
     left: -20px;
-    font-size: 50px; 
+    font-size: 50px;
 }
 
 .comment-icon {
@@ -176,12 +180,12 @@ body.home .post {
 }
 
 .section-post-meta .meta {
-    opacity:0.4;     
+    opacity:0.4;
 }
 
 .newer-older {
     margin-top: 20px;
-    margin-bottom: -20px;    
+    margin-bottom: -20px;
 }
 
 .newer-older a:hover i {
@@ -200,7 +204,7 @@ body.home .post {
     width:43%;
 }
 
-.newer-older a:hover {    
+.newer-older a:hover {
     opacity:1;
 }
 
@@ -251,7 +255,7 @@ ul.listless li {
     margin-bottom:40px;
 }
 
-#page-archive ol li:hover {    
+#page-archive ol li:hover {
     color:#ccc;
 }
 
@@ -279,12 +283,12 @@ ul.repository-list li a.build-status {
 }
 
 body.illustration {
-    
+
 }
 
 body.illustration .image {
     width:100%;
-    display:block;    
+    display:block;
 }
 
 .post .illustration {
@@ -308,7 +312,7 @@ body.illustration .image {
     line-height: 100px;
     margin: 100px 0 0 286px;
     color: white;
-    opacity: 0.4;    
+    opacity: 0.4;
 }
 
 .post .illustration a:hover {
@@ -329,7 +333,7 @@ body.illustration .image {
 
 #page-index .archive-link {
     font-size: 24px;
-    line-height: 36px;  
+    line-height: 36px;
     margin-left:60px;
     display:block;
     border-top:5px solid #eee;
@@ -340,7 +344,7 @@ body.illustration .image {
     text-decoration: none;
     width: auto;
     height: auto;
-    line-height: 28px;   
+    line-height: 28px;
 }
 
 .sidebar h3 {
@@ -365,7 +369,7 @@ body.illustration .image {
     font-weight: normal;
     font-style: italic;
     font-size: 16px;
-    line-height: 24px;    
+    line-height: 24px;
     margin-bottom:8px;
     margin-top:20px;
     border-left: 5px solid #DDD;
