@@ -4,7 +4,7 @@
     <li value="{{ reverse_index }}">
         <h2><a href="{{ post.url }}">{{ post.title }} {{ post_index }}</a></h2>
         <p class="post-date">{{ post.date | date: "%B %e, %Y" }}</p>
-        {{ post | only_first_p }}
+        {{ post.excerpt }}
     </li>
     {% endfor %}    
 </ol>
