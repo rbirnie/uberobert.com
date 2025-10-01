@@ -6,8 +6,8 @@ url:         http://www.uberobert.com
 safe:        false
 
 future:      false
-pygments:    true
-markdown:    rdiscount
+markdown: kramdown
+highlighter: rouge
 
 # Site
 uberobert:
