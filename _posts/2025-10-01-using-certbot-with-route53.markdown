@@ -72,7 +72,7 @@ Now, we’ll create an IAM user with access restricted to our new hosted zone.
 7. On your server, add the access keys to `~/.aws/config`:
 
 {% highlight yaml %}
-[defailt]
+[default]
 aws_access_key_id=keyid
 aws_secret_access_key=keyvalue
 {% endhighlight %}
