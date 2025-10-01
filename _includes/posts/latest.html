@@ -1,4 +1,6 @@
-{% for post in site.posts offset: 0 limit: 4 %}
-  {% include posts/post.html %}
+{% for post in site.posts limit: 4 %}
+  {% include posts/post.html post=post %}
 {% endfor %}
-<a href="/archive" class="archive-link">All posts <i class="icon-arrow-right"></i></a>
+<a href="{{ '/archive/' | relative_url }}" class="archive-link">
+  All posts <i class="icon-arrow-right"></i>
+</a>

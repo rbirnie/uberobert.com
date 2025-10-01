@@ -32,6 +32,11 @@ body {
     background-image: url('/background.png');
 }
 
+.archive-list li::marker {
+  font-weight: 600;
+  /* color, font-size, etc. */
+}
+
 .container {
     position:relative;
 }

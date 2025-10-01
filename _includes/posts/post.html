@@ -1,62 +1,69 @@
-{% assign content_item = false %}
-{% if post %}
-    {% assign content_item = post %}
-{% else %}
-    {% assign content_item = page %}
-{% endif %}
+{%- assign p = include.post | default: page -%}
 <div class="post">
     <div class="section section-post-meta post">    
         <h2>            
-            <a href="{{ content_item.url }}">
-            {% if content_item.icon %} 
-                <i class="indicator-icon {{ content_item.icon }}"></i>
-            {% else %}
+            <a href="{{ p.url | relative_url }}">
+                {%- if p.icon -%}
+                <i class="indicator-icon {{ p.icon }}"></i>
+                {%- else -%}
                 <i class="indicator-icon icon-bullhorn"></i>
-            {% endif %}                
-                {{ content_item.title }}
+                {%- endif -%}
+                {{ p.title }}
             </a>
         </h2>
         <p class="meta">
-            {{ content_item.date | date: "%B %e, %Y" }}{% if content_item.author %} by {% if content_item.author.url %}<a href="{{ content_item.author.url }}">{{ content_item.author.name }}</a>{% else %}{{ content_item.author.name }}{% endif %}{% endif %}
+            <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %e, %Y" }}</time>
+            {%- if p.author -%}
+                by
+                {%- if p.author.url -%}
+                <a href="{{ p.author.url }}">{{ p.author.name }}</a>
+                {%- else -%}
+                {{ p.author.name }}
+                {%- endif -%}
+            {%- endif -%}
         </p>
     </div>
-    {% if content_item.illustration %}{% if content_item.illustration.id %}
-    <div class="section">
-        <div class="illustration illustration-{{ content_item.illustration.id }}">
-            <a href="/illustrations/{{ content_item.illustration.id }}" style="background-image: url('{{ content_item.illustration.url }}');"><i class="icon-zoom-in"></i></a>
-        </div>
-    </div>
-    {% else %}
-    <div class="section">
-        <div class="illustration illustration-{{ content_item.illustration.id }}" style="{% if content_item.illustration.height %} height: {{content_item.illustration.height}} {% endif %}">
-            <span style="background-image: url('{{ content_item.illustration.url }}');"></span>
-        </div>
-    </div>        
-{% endif %}
-{% endif %}
-{% assign skipuri = "/index.html|/about.html" | split: "|" %}
-{% assign pageuri = "/index.html" | split: "|" %}
-{% unless skipuri contains page.url %}
-{{ content }}
-{% else %}
-{{ content_item.content }}
-{% endunless %}
-{% unless skipuri contains page.url %}
-    <div class="section comments">
-        <i class="comment-icon icon-comment-alt"></i>
-        <div id="disqus_thread">
-        </div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'uberobert'; // required: replace example with your forum shortname
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
+    {%- if p.illustration -%}
+        <div class="section">
+        <div class="illustration illustration-{{ p.illustration.id }}">
+            {%- if p.illustration.id -%}
+            <a href="/illustrations/{{ p.illustration.id }}"
+                style="background-image: url('{{ p.illustration.url }}');">
+                <i class="icon-zoom-in"></i>
+            </a>
+            {%- else -%}
+            <span style="background-image: url('{{ p.illustration.url }}');{%- if p.illustration.height -%} height: {{ p.illustration.height }}{%- endif -%}"></span>
+            {%- endif -%}
+        </div>
+        </div>
+    {%- endif -%}
+
+    {%- if include.post -%}
+      {% comment %} TEASER MODE (homepage / lists) {% endcomment %}
+        <div class="section excerpt">
+        {{ post.excerpt }}
+        </div>
+    {%- else -%}
+        {% comment %} SINGLE POST MODE {% endcomment %}
+        <div class="section post-body">
+        {{ content }}
+        {# If you prefer, use {{ p.content }} instead of {{ content }} #}
+        </div>
+
+        {% comment %} Comments only on single post pages {% endcomment %}
+        <div class="section comments">
+        <i class="comment-icon icon-comment-alt"></i>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_shortname = 'uberobert';
             (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.async = true;
+            (d.head || d.body).appendChild(s);
             })();
-        </script>        
-    </div>        
-{% endunless %}
+        </script>
+        </div>
+    {%- endif -%}
 </div>

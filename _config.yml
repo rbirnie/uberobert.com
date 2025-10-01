@@ -9,10 +9,11 @@ future:      false
 markdown: kramdown
 highlighter: rouge
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 # Site
 uberobert:
     title: Uberobert
 
-# Only First P Plugin
-only_first_p:
-    show_read_more_link: false

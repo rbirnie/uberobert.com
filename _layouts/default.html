@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ page.title }}</title>
+        <title>{{ page.title | default: site.uberobert.title | default: site.title }}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% seo %}
         {% include assets/css/default.html %}
         {% include assets/js/default.html %}
     </head>
@@ -13,9 +14,9 @@
             <div class="row">
                 <div class="span8">
                     {% case page.url %}
-                        {% when '/index.html' %}
+                        {% when '/' %}
                             {% include posts/latest.html %}
-                        {% when '/archive/index.html' %}
+                        {% when '/archive/' %}
                             {% include posts/archive.html %}
                         {% else %}
                             {% include posts/post.html %}

@@ -1,10 +1,15 @@
-<ol>
-    {% for post in site.posts %}
-    {% capture reverse_index %}{{forloop.length | minus:forloop.index | plus:1 }}{% endcapture %}
-    <li value="{{ reverse_index }}">
-        <h2><a href="{{ post.url }}">{{ post.title }} {{ post_index }}</a></h2>
-        <p class="post-date">{{ post.date | date: "%B %e, %Y" }}</p>
-        {{ post | only_first_p }}
+<ol class="archive-list" reversed>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%B %e, %Y" }}
+        </time>
+      </p>
+      <div class="excerpt">
+        {{ post.excerpt }}
+      </div>
     </li>
-    {% endfor %}    
+  {% endfor %}
 </ol>
