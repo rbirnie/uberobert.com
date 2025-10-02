@@ -31,13 +31,21 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      # OPTIONAL: quick sanity check (can keep or remove)
+      - name: Who am I
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az account show --query "{sub:id, user:user.name}"
+
       # 5. Upload built site (_site) to the $web container
       - name: Upload to $web
         uses: azure/cli@v2
         with:
           inlineScript: |
             az storage blob upload-batch \
-              --account-name "$STORAGE_ACCOUNT" \
+              --account-name "${{ vars.AZURE_STORAGE_ACCOUNT }}" \
               --destination '$web' \
               --source _site \
+              --auth-mode login
               --overwrite
