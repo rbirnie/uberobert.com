@@ -40,18 +40,14 @@
     {%- endif -%}
 
     {%- if include.post -%}
-      {% comment %} TEASER MODE (homepage / lists) {% endcomment %}
         <div class="section excerpt">
         {{ post.excerpt }}
         </div>
     {%- else -%}
-        {% comment %} SINGLE POST MODE {% endcomment %}
         <div class="section post-body">
         {{ content }}
-        {# If you prefer, use {{ p.content }} instead of {{ content }} #}
         </div>
 
-        {% comment %} Comments only on single post pages {% endcomment %}
         <div class="section comments">
         <i class="comment-icon icon-comment-alt"></i>
         <div id="disqus_thread"></div>
