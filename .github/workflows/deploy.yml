@@ -48,4 +48,5 @@ jobs:
               --destination '$web' \
               --source _site \
               --auth-mode login \
-              --overwrite
+              --overwrite \
+              --delete-destination true
