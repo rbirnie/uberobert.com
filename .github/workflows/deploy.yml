@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+      STORAGE_ACCOUNT: ${{ vars.AZURE_STORAGE_ACCOUNT }}
     steps:
       # 1. Checkout your repo
       - uses: actions/checkout@v4
@@ -39,11 +39,11 @@ jobs:
             az account show --query "{name:name, id:id, tenant:tenantId}" -o tsv
 
             echo "Storage account lookup:"
-            az storage account show -n "${{ secrets.AZURE_STORAGE_ACCOUNT }}" -o table
+            az storage account show -n "${{ vars.AZURE_STORAGE_ACCOUNT }}" -o table
 
             echo "Static website status:"
             az storage blob service-properties show \
-              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --account-name "${{ vars.AZURE_STORAGE_ACCOUNT }}" \
               --auth-mode login
 
       # 5. Upload built site (_site) to the $web container
