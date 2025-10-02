@@ -1,6 +1,6 @@
 # Jekyll
 exclude: ['nbproject', 'README.md', 'manifest.yml', 'rakefile.rb', 'Gemfile', 'Gemfile.lock', 'update.sh', 'localupdate.sh','s3_website.yml']
-permalink:   pretty
+permalink: /:title/
 url:         http://www.uberobert.com
 
 safe:        false
