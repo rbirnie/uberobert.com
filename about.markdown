@@ -3,8 +3,22 @@ layout: default
 title: Bio
 ---
 
-<p>I'm an IT Professional, Systems Engineer and budding entrepreneur. I currently work for <a href="http://www.threatmetrix.com">ThreatMetrix</a> and privously served stints at <a href="http://us.etrade.com">E*Trade Financial</a> and <a href="http://www.cardiodx.com">CardioDx</a>. I love automating things and dream of the day when systems are smart enough to never need to login to a Linux box.</p>
+<p>
+Hi, I’m Robert Birnie — a technology leader, systems engineer, and lifelong tinkerer. Over the past two decades, I’ve worked across startups, scale-ups, and global enterprises, building and operating infrastructure that powers millions of users worldwide. 
+</p>
 
-<p>I'm also a bookworm, traveler, scuba diver, sailor, aquarist, horticulturist, runner, anime watcher, foodie, husband, and father. If only there was more time in the world... If you really want to know more about me then check out my <a href="http://about.me/robert.birnie">about.me</a> for a list of other places I commonly lurk.</p>
+<p>
+Most recently, I’ve been consulting on IT operations, cloud strategy, and compliance (SOC2, HIPAA, GDPR), helping companies streamline technology while staying secure and cost-efficient. Before that, I served as Vice President of Global Operations at <a href="http://www.threatmetrix.com">ThreatMetrix</a> (acquired by LexisNexis Risk Solutions), where I led global IT, infrastructure, and DevOps — supporting billions of monthly transactions and driving 24x7 uptime for mission-critical fraud prevention systems. I’ve also held roles at <a href="http://us.etrade.com">E*TRADE Financial</a>, <a href="http://www.cardiodx.com">CardioDx</a>, and other technology companies, with hands-on experience across AWS, Azure, and GCP, Kubernetes, Terraform, automation, and FinOps.
+</p>
 
-<p>If you have any thoughts while reading this site I'd love to hear them. You can contact me on <a href="http://twitter.com/Robert_Birnie">Twitter</a>, or via <a href="mailto:rbirnie@gmail.com">email</a>. Thanks for reading!</p>
+<p>
+At my core, I love solving hard problems with automation. My ideal future is one where systems are so self-managing that nobody ever needs to SSH into a Linux box again. Until then, I’ll happily keep writing scripts, building dashboards, and streamlining operations wherever I can.
+</p>
+
+<p>
+Outside of work, I’m a bookworm, traveler, scuba diver, and sailor. I even took a four-year sabbatical to explore the Pacific with my family aboard our Maple Leaf 48’ sailboat. I’m also an aquarist, gardener, runner, anime watcher, foodie, husband, and father. If only there were more hours in the day…
+</p>
+
+<p>
+If you’d like to connect, you can find me on <a href="http://twitter.com/Robert_Birnie">Twitter</a>, <a href="https://www.linkedin.com/in/robertbirnie/">Linkedin</a>, or <a href="http://about.me/robert.birnie">about.me</a>, or drop me a note by <a href="mailto:rbirnie@gmail.com">email</a>. I’d love to hear your thoughts!
+</p>
