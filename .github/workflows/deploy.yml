@@ -47,5 +47,5 @@ jobs:
               --account-name "${{ vars.AZURE_STORAGE_ACCOUNT }}" \
               --destination '$web' \
               --source _site \
-              --auth-mode login
+              --auth-mode login \
               --overwrite
