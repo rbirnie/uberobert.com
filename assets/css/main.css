@@ -1,3 +1,12 @@
+[root]  /* not actual CSS selector; just a marker */
+:root {
+    --brand: #005580;
+    --text: #222;
+    --muted: #666;
+    --bg: #fff;
+    --heading: #005580; /* same color for all headings */
+}
+
 [class^="icon-"], [class*=" icon-"] {
     background-image: none;
 }
@@ -14,11 +23,18 @@ a {
     color: #005580;
 }
 
+/* Improve keyboard visibility for links */
+a:focus-visible {
+    outline: 2px solid #005580;
+    outline-offset: 2px;
+}
 
 blockquote {
-    border-color: #ddd;
-    opacity:0.8;
+    border-left: 4px solid #ddd;
+    padding-left: .75rem;
     font-style: italic;
+    color: #444;
+    opacity: 1; /* keep text crisp */
 }
 
 .addthis_toolbox {
@@ -29,7 +45,8 @@ blockquote {
 body {
     margin-bottom: 60px;
     padding-top:60px;
-    background-image: url('/background.png');
+    background-image: url('/background.png'); /* consider moving to a header if contrast suffers */
+    color: var(--text);
 }
 
 .archive-list li::marker {
@@ -42,12 +59,20 @@ body {
 }
 
 #logo {
-    position:absolute;
-    background: url('https://secure.gravatar.com/avatar/da5e11d3f25a58742129931a5da9e3d7?s=100') transparent no-repeat top left;
-    width:100px;
-    height:100px;
-    top: 60px;
-    left:-50px;
+    background: url('https://secure.gravatar.com/avatar/da5e11d3f25a58742129931a5da9e3d7?s=100') no-repeat 0 0 / cover;
+    width: 64px;
+    height: 64px;
+    position: static;        /* avoid overlap on small screens */
+    margin: 0 0 1rem -0.5rem;
+}
+@media (min-width: 992px) {
+    #logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 60px;
+        left: -50px;
+    }
 }
 
 .hero-unit {
@@ -118,11 +143,25 @@ body.home .post {
 
 code {
     color: #333333;
+    background: #f5f5f5;
+    border-radius: 3px;
+    padding: 0 .25em;
+ }
+ 
+pre code {
+    display: block;
+    padding: .75rem;
+    overflow-x: auto;
 }
 
-.post .section {
-    padding-left: 60px;
-    padding-right: 60px;
+ /* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+}
+
+.post .section { padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 992px) {
+    .post .section { padding-left: 2.5rem; padding-right: 2.5rem; } /* ~40px */
 }
 
 .sidebar h2 {
@@ -162,47 +201,52 @@ code {
 .indicator-icon {
     width: auto;
     height: auto;
-    position: absolute;
-    left: -20px;
-    font-size: 50px;
+    position: static;      /* prevent collisions on narrow viewports */
+    font-size: 1.75rem;
+    margin-right: .5rem;
 }
 
 .comment-icon {
     width: auto;
     height: auto;
-    position: absolute;
-    left: -20px;
-    font-size: 50px;
-    color:#005580;
+    position: static;
+    font-size: 1.75rem;
+    color: #005580;
+    margin-right: .5rem;
 }
 
-/* Match post H1 to post H2 look/behavior */
-.post h1 {
-  font-size: 24px;           /* Bootstrap v2-ish h2 size */
-  line-height: 36px;
-  font-weight: bold;
-  margin: 10px 0;
+@media (min-width: 992px) {
+    .indicator-icon,
+    .comment-icon {
+        position: absolute;
+        left: -20px;
+        font-size: 50px;
+    }
+}
+
+/* Unified heading visuals (same color whether linked or not) */
+.post h1, .post h2 {
+  font-size: 1.5rem;      /* 24px */
+  line-height: 2.25rem;   /* 36px */
+  font-weight: 700;
+  margin: .5rem 0 .75rem;
   color: #005580;
 }
-
-.post h2 {
-  font-size: 24px;           /* Bootstrap v2-ish h2 size */
-  line-height: 36px;
-  font-weight: bold;
-  margin: 10px 0;
-  color: #005580;
+.post h3 { font-size: 1.125rem; line-height: 1.75rem; }
+.post h1 a, .post h2 a, .post h3 a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
-
-.post h2 a {
-    display:block;
-}
-
-.post h2 a:hover i {
-    text-decoration: none;
+.post h1 a:hover, .post h2 a:hover, .post h3 a:hover,
+.post h1 a:focus-visible, .post h2 a:focus-visible, .post h3 a:focus-visible {
+  text-decoration: underline;
+  outline: none;
 }
 
 .section-post-meta .meta {
-    opacity:0.4;
+    color: var(--muted);
+    opacity:1;
 }
 
 .newer-older {
@@ -268,13 +312,13 @@ ul.listless li {
 }
 
 #page-archive ol {
-    margin-left:120px;
+    margin-left:2rem;
 }
 
 #page-archive ol li {
-    font-size:40px;
-    color:#ddd;
-    margin-bottom:40px;
+    font-size: 1rem;
+    color:#bbb;
+    margin-bottom: 1.25rem;
 }
 
 #page-archive ol li:hover {

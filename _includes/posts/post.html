@@ -14,7 +14,7 @@
         <p class="meta">
             <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %e, %Y" }}</time>
             {%- if p.author -%}
-                by
+                &nbsp;by&nbsp;
                 {%- if p.author.url -%}
                 <a href="{{ p.author.url }}">{{ p.author.name }}</a>
                 {%- else -%}

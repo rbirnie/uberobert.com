@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Bio
+title: About
+permalink: /about/
+redirect_from:
+ - /about.html
 ---
 
 <p>
@@ -8,7 +11,7 @@ Hi, I’m Robert Birnie — a technology leader, systems engineer, and lifelong 
 </p>
 
 <p>
-Most recently, I’ve been consulting on IT operations, cloud strategy, and compliance (SOC2, HIPAA, GDPR), helping companies streamline technology while staying secure and cost-efficient. Before that, I served as Vice President of Global Operations at <a href="http://www.threatmetrix.com">ThreatMetrix</a> (acquired by LexisNexis Risk Solutions), where I led global IT, infrastructure, and DevOps — supporting billions of monthly transactions and driving 24x7 uptime for mission-critical fraud prevention systems. I’ve also held roles at <a href="http://us.etrade.com">E*TRADE Financial</a>, <a href="http://www.cardiodx.com">CardioDx</a>, and other technology companies, with hands-on experience across AWS, Azure, and GCP, Kubernetes, Terraform, automation, and FinOps.
+Most recently, I’ve been consulting on CloudOPS and compliance (SOC2). Before that, I served as Vice President of Global Operations at <a href="http://www.threatmetrix.com">ThreatMetrix</a> (acquired by LexisNexis Risk Solutions), where I led global IT, infrastructure, and DevOps — supporting billions of monthly transaction fraud prevention system. I’ve also held roles at <a href="http://us.etrade.com">E*TRADE Financial</a>, <a href="http://www.cardiodx.com">CardioDx</a>, and other technology companies.
 </p>
 
 <p>
@@ -16,7 +19,7 @@ At my core, I love solving hard problems with automation. My ideal future is one
 </p>
 
 <p>
-Outside of work, I’m a bookworm, traveler, scuba diver, and sailor. I even took a four-year sabbatical to explore the Pacific with my family aboard our Maple Leaf 48’ sailboat. I’m also an aquarist, gardener, runner, anime watcher, foodie, husband, and father. If only there were more hours in the day…
+Outside of work, I’m a bookworm, traveler, scuba diver, and sailor. I just returned from a four-year sabbatical to explore the Pacific with my family aboard our Maple Leaf 48’ sailboat. I’m also an aquarist, gardener, runner, anime watcher, foodie, husband, and father. If only there were more hours in the day…
 </p>
 
 <p>
