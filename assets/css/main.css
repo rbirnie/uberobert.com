@@ -176,6 +176,23 @@ code {
     color:#005580;
 }
 
+/* Match post H1 to post H2 look/behavior */
+.post h1 {
+  font-size: 24px;           /* Bootstrap v2-ish h2 size */
+  line-height: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #005580;
+}
+
+.post h2 {
+  font-size: 24px;           /* Bootstrap v2-ish h2 size */
+  line-height: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #005580;
+}
+
 .post h2 a {
     display:block;
 }
