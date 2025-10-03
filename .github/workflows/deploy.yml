@@ -43,10 +43,9 @@ jobs:
         uses: azure/cli@v2
         with:
           inlineScript: |
-            az storage blob upload-batch \
+            az storage blob sync \
               --account-name "${{ vars.AZURE_STORAGE_ACCOUNT }}" \
-              --destination '$web' \
+              --container '$web' \
               --source _site \
               --auth-mode login \
-              --overwrite \
               --delete-destination true
