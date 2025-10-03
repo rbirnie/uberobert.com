@@ -30,17 +30,18 @@ jobs:
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      # OPTIONAL: quick sanity check (can keep or remove)
-      - name: Who am I
+          
+      # (One time) ensure the preview storage commands are available
+      - name: Enable storage-preview extension
         uses: azure/cli@v2
         with:
           inlineScript: |
-            az account show --query "{sub:id, user:user.name}"
+            az extension add -n storage-preview || az extension update -n storage-preview
 
-      # 5. Upload built site (_site) to the $web container
-      - name: Upload to $web
+      - name: Sync to $web (deletes removed files)
         uses: azure/cli@v2
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZURECLI     # <- tells AzCopy to reuse azure/login
         with:
           inlineScript: |
             az storage blob sync \
